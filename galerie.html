@@ -1,0 +1,496 @@
+﻿<!doctype HTML>
+<HTML><head>
+
+
+       <title> Descoperă Romania </title>
+       <link rel="stylesheet" type="text/css" href="css\index.css"/>
+       <link rel="stylesheet" type="text/css" href="css\component.css"/>
+       <link rel="stylesheet" type="text/css" href="css\demo.css" />
+       <link rel="stylesheet" type="text/css" href="css\galerie.css"/>
+	   	 <link rel="stylesheet" type="text/css" href="css\set1.css" />
+       <link rel="stylesheet" type="text/css" href="css\galery.css" />
+       <link rel='stylesheet prefetch' href='css\magnific-popup.css'>
+
+
+
+ <style>
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* 
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
+
+====== Newspaper effect ======
+
+*/
+.mfp-newspaper {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-newspaper .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.5s;
+  transform: scale(0) rotate(500deg);
+}
+.mfp-newspaper.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.mfp-newspaper.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+.mfp-newspaper.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-newspaper.mfp-removing .mfp-with-anim {
+  transform: scale(0) rotate(500deg);
+  opacity: 0;
+}
+.mfp-newspaper.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
+
+====== Move-horizontal effect ======
+
+*/
+.mfp-move-horizontal {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-move-horizontal .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(-50px);
+}
+.mfp-move-horizontal.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mfp-move-horizontal.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+.mfp-move-horizontal.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-move-horizontal.mfp-removing .mfp-with-anim {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.mfp-move-horizontal.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
+
+====== Move-from-top effect ======
+
+*/
+.mfp-move-from-top {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-move-from-top .mfp-content {
+  vertical-align: top;
+}
+.mfp-move-from-top .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s;
+  transform: translateY(-100px);
+}
+.mfp-move-from-top.mfp-bg {
+  opacity: 0;
+  transition: all 0.2s;
+}
+.mfp-move-from-top.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mfp-move-from-top.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-move-from-top.mfp-removing .mfp-with-anim {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.mfp-move-from-top.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
+
+====== 3d unfold ======
+
+*/
+.mfp-3d-unfold {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-3d-unfold .mfp-content {
+  perspective: 2000px;
+}
+.mfp-3d-unfold .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(-60deg);
+}
+.mfp-3d-unfold.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.mfp-3d-unfold.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-3d-unfold.mfp-removing .mfp-with-anim {
+  transform: rotateY(60deg);
+  opacity: 0;
+}
+.mfp-3d-unfold.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
+
+====== Zoom-out effect ======
+
+*/
+.mfp-zoom-out {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-zoom-out .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.3);
+}
+.mfp-zoom-out.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-out.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-out.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-out.mfp-removing .mfp-with-anim {
+  transform: scale(1.3);
+  opacity: 0;
+}
+.mfp-zoom-out.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* 
+
+====== "Hinge" close effect ======
+
+*/
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+.hinge {
+  animation-duration: 1s;
+  animation-name: hinge;
+}
+
+.mfp-with-fade .mfp-content, .mfp-with-fade.mfp-bg {
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+.mfp-with-fade.mfp-ready .mfp-content {
+  opacity: 1;
+}
+.mfp-with-fade.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-with-fade.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+</style>
+
+  
+
+	</head>
+
+	<body>
+	<div class="hcontainer">
+       <div class="header">
+          <div id="logo"> <a href="index.html"> <img src="img\logo.png" width="240" alt="logo"> </a></div>
+
+            <section class="color-6">
+				<nav class="cl-effect-18">
+					<a href="despre.html">Despre</a>
+          <a href="https://descoperaromaniaminidama.blogspot.com/">Blog</a>
+					<a href="galerie.html">Galerie</a>
+					<a href="turism.html">Turism</a>
+					<a href="prezentare.html">Prezentare</a>
+          <a href="index.html">Acasă</a>
+				</nav>
+			</section>
+
+
+          </div> <!--header navigation -->
+       </div> <!--header-->
+    </div> <!--header container-->
+<br>
+
+ 
+
+
+    <div class="container">
+
+  <div class="links">
+   <script src="js/prefixfree.min.js"></script>
+
+  <ul id="image-popups">
+  
+     <div id="photogrid">
+
+         <div id="photo">
+            <a href="img\ph1.jpg" data-effect="mfp-zoom-in"> <img src="img\ph1.jpg"> </a>
+          </div> <!--end photo-->
+
+            <div id="photo">
+            <a href="img\ph2.jpg" data-effect="mfp-zoom-in"> <img src="img\ph2.jpg"> </a>
+          </div> <!--end photo--> 
+
+            <div id="photo">
+            <a href="img\ph3.jpg" data-effect="mfp-zoom-in"> <img src="img\ph3.jpg"> </a>
+          </div> <!--end photo--> 
+
+            <div id="photo">
+            <a href="img\ph4.jpg" data-effect="mfp-zoom-in"> <img src="img\ph4.jpg"> </a>
+          </div> <!--end photo-->  
+
+
+
+
+             <div id="photo">
+            <a href="img\ph5.jpg" data-effect="mfp-zoom-in"> <img src="img\ph5.jpg"> </a>
+          </div> <!--end photo-->
+
+            <div id="photo">
+            <a href="img\ph6.jpg" data-effect="mfp-zoom-in"> <img src="img\ph6.jpg"> </a>
+          </div> <!--end photo--> 
+
+            <div id="photo">
+            <a href="img\ph7.jpg" data-effect="mfp-zoom-in"> <img src="img\ph7.jpg"> </a>
+          </div> <!--end photo--> 
+
+            <div id="photo">
+            <a href="img\ph8.jpg" data-effect="mfp-zoom-in"> <img src="img\ph8.jpg"> </a>
+          </div> <!--end photo-->  
+
+
+           <div id="photo">
+            <a href="img\ph9.jpg" data-effect="mfp-zoom-in"> <img src="img\ph9.jpg"> </a>
+          </div> <!--end photo-->
+
+            <div id="photo">
+            <a href="img\ph10.jpg" data-effect="mfp-zoom-in"> <img src="img\ph10.jpg"> </a>
+          </div> <!--end photo--> 
+
+            <div id="photo">
+            <a href="img\ph11.jpg" data-effect="mfp-zoom-in"> <img src="img\ph11.jpg"> </a>
+          </div> <!--end photo--> 
+
+            <div id="photo">
+            <a href="img\ph12.jpg" data-effect="mfp-zoom-in"> <img src="img\ph12.jpg"> </a>
+          </div> <!--end photo-->  
+
+<center>
+            <img id="divider" src="img\divider2.png">
+         </center>
+    </div> <!-- end photogrid -->
+  </ul>
+</div>
+         
+  <script src="js/jquery.js"> </script>
+  <script src="js/jquery.magnific-popup.min.js"> </script>
+
+  <script src="js/index.js"></script>
+
+ <!-- <script src="js\jquery.js"></script>
+  <script src="js\jquery.magnific-popup.min.js"></script>
+  <script src="js\index.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <br>
+       <br>
+
+
+				
+    </div> <!--container-->
+    
+
+<style>
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color:inherit;
+  transition:0.2s ease-in-out;
+}
+
+a:hover {
+  opacity:1;
+    color:#bfff00;
+    transition:0.2s ease-in-out;
+}
+
+a:focus {
+  color:inherit;
+}
+
+
+</style>
+
+ <div class="footer">
+       <div id="wrapper">
+          <img id="logowhite" src="img\logowhite.png" width="200">
+
+          <div id="fcolumn"> 
+             <div id="ftitle">
+              PREZENTARE </div>
+
+            
+              <a href="geografie.html">Geografie </a>  <br>
+              <a href="economia.html">Economia </a>  <br>
+              <a href="traditii.html">Tradiții </a>  <br>
+              <a href="prezentare.html"> Locație </a> <br>
+              <a href="clima.html">Clima </a>  <br>
+              
+          </div> <!-- END FCOLUMN -->
+
+
+          <div id="fcolumn"> 
+             <div id="ftitle">
+              TURISM </div>
+              <a href="#sate"> Satele tradiționale </a> <br>
+              <a href="#statiuni"> Marea Neagră </a> <br>
+              <a href="#delta"> Delta Dunării </a> <br>
+              
+            
+          </div> <!-- END FCOLUMN -->
+
+
+          <div id="fcolumn"> 
+             <div id="ftitle">
+              GALERIE FOTO </div>
+              <a href="galerie.html">Arhitectura </a>  <br>
+              <a href="galerie.html">Oameni </a>  <br>
+              <a href="galerie.html">Munți </a>  <br>
+
+              
+          </div> <!-- END FCOLUMN -->
+
+
+
+          <div id="fcolumn"> 
+             <div id="ftitle">
+              DESPRE </div>
+              <a href="despre.html"> Detalii </a>  <br>
+              <a href="despre.html"> Autor </a>  <br>
+
+              
+          </div> <!-- END FCOLUMN -->
+
+
+       </div>
+    </div>
+
+	</body>
+</HTML>
+

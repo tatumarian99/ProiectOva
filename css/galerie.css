@@ -1,0 +1,46 @@
+body {
+	background-image:url(../add/grey.jpg);
+}
+
+#photogrid {
+	width:100%;
+	height:480px;
+	text-align:center;
+}
+
+#photo {
+	text-align:center;
+	display:inline-block;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:5px;
+}
+
+#photo img {
+	height:165px;
+	width:230px;
+	transition: all 0.4s ease-in-out;
+}
+
+#photo img:hover {
+  box-shadow: 0 0 0 8px #e52b50 ;
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+}
+
+
+
+
+
+
+ul {
+	padding:0px;
+	margin:0px;
+}
+
+
+
+

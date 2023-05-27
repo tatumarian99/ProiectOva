@@ -1,0 +1,214 @@
+.header-unit {
+  height: 460px;
+  position: relative;
+ 
+   
+}
+#video-container {
+	position: absolute;
+
+	
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	
+
+}
+video {
+	position:absolute;
+	z-index:0;
+
+
+	
+}
+video.fillWidth {
+	width: 100%;
+}
+
+#grid {
+	position:absolute;
+	width:100%;
+	height:460px;
+	background-image:url(../img/grid.png);
+	background-repeat:repeat;
+	z-index:1;
+	box-shadow: inset 0 0 80px #000;
+}
+
+.owrapper {
+	z-index:2;
+	display:inline-block;
+	position: absolute;
+	width:100%;
+	height:460px;
+}
+
+#overlay {
+	width:380px;
+	height:460px;
+	right:0;
+	position:absolute;
+	z-index:-1;
+	color:#fff;
+	padding-right:80px;
+	padding-top:50px;
+	text-align:right;
+	background-color:#000;
+	opacity:0.8;
+}
+
+#otitle {
+	font-weight:590;
+	font-size:30px;
+	font-family:Impact;
+    padding-right:100px;
+	padding-top:50px;
+	text-align:right;
+	padding-bottom:35px;
+}
+
+#overlay1 {
+	width:380px;
+	height:460px;
+	float:right;
+	z-index:5;
+	color:#fff;
+   
+}
+
+#overlay1 li {
+	font-family:Segoe UI;
+	font-size:21px;
+	list-style-type:circle;
+	margin-bottom:3px;
+	margin-top:3px;
+	padding-left:25px;
+	transition:0.4s ease-in-out;
+}
+
+#overlay1 li:hover {
+	color:#b2e328;
+	transition:0.4s ease-in-out;
+	padding-left:30px;
+}
+
+
+#obutton {
+	margin:0px auto;
+	font-size:18px;
+	font-weight:700;
+	width:180px;
+	height:35px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#b2e328;
+	transition:0.4s ease-in-out;
+}
+
+
+
+#obutton a {
+	color:#000;
+    transition:0.4s ease-in-out;
+}
+
+#obutton a:hover {
+	color:#fff;
+	transition:0.4s ease-in-out;
+
+}
+
+
+#obutton:hover {
+	background-color:#ED1C24;
+	color:#fff;
+	transition:0.4s ease-in-out;
+}
+
+
+
+
+#obutton2 {
+	margin:0px auto;
+	font-size:18px;
+	font-weight:600;
+	width:180px;
+	height:35px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:red;
+}
+
+
+.postone {
+	margin-top:30px;
+
+}
+
+#ptitle {
+	font-size:23px;
+	font-weight:600;
+	color:#28343C;
+}
+
+#ptitle2 {
+	font-size:23px;
+	font-weight:600;
+	color:#fff;
+}
+
+
+#pcontent {
+	color:#28343C;
+}
+
+#gallery {
+	width:960px;
+	height:180px;
+	text-align:center;
+}
+
+
+.scrollingbg {
+	width:100%;
+	height:480px;
+	background-image:url(../add/peles1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.scrollingbg2 {
+	width:100%;
+	height:480px;
+	background-image:url(../add/brasov1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.scrollingbg3 {
+	width:100%;
+	height:480px;
+	background-image:url(../add/carpati1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+.scrollingcontainer {
+	padding-top:15px;
+	padding-left:25px;
+	padding-right:25px;
+	color:#fff;
+	width:960px;
+	height:480px;
+    margin:0px auto;
+    opacity:0.9;
+    background-color:#1c1c1c;
+}

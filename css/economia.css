@@ -1,0 +1,220 @@
+body {
+	font-family:Segoe UI;
+	margin:0px;
+	padding:0px;
+}
+
+.hcontainer {
+	width:960px;
+	height:100px;
+	margin:0px auto;
+
+}
+
+.container {
+	width:960px;
+	height:1250px;
+	margin:0px auto;
+}
+
+.header {
+	margin-top:20px;
+	width:960px;
+	height:80px;
+}
+
+.header img {
+	float:left;
+	margin-top:15px;
+}
+
+.header #navigation {
+	text-align: right;
+}
+
+#navigation li {
+	margin-top:35px;
+    display:inline-block;
+    margin-left:25px;
+}
+
+
+.slider img {
+	width:100%;
+}
+
+/* CONTENT */
+
+
+
+#dside {
+    width:190px;
+    height:407px;
+    float:left;
+    margin-left:14px;
+    margin-top:10px;
+    position:absolute;
+    z-index:0;
+}
+
+
+
+#sidewrapper {
+    position:absolute;
+    z-index:-1;
+}
+
+#sideimg {
+	padding-left:10px;
+	padding-top:2px;
+    position:absolute;
+    z-index:-3;
+}
+
+#sidenav {
+	z-index:5;
+	float:left;
+}
+
+
+
+#locatie {
+	z-index:1;
+	margin-left:25px;
+	margin-top:50px;
+	float:left;
+	opacity:0.9;
+}
+
+#locatie img {
+	float:left;
+	width:30px;
+	height:30px;
+}
+
+#locatie li {
+
+	float:left;
+	list-style-type: none;
+	font-size:22px;
+	font-weight:500;
+	padding-left:5px;
+}
+
+
+#geografie {
+	margin-left:25px;
+	margin-top:5px;
+	float:left;
+	opacity:0.9;
+}
+
+#geografie img {
+	float:left;
+	width:30px;
+	height:30px;
+}
+
+#geografie li {
+	float:left;
+	list-style-type: none;
+	font-size:22px;
+	font-weight:500;
+	padding-left:5px;
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+	color:inherit;
+}
+
+a:hover {
+	opacity:1;
+    color:#bfff00;
+    transition:0.2s ease-in-out;
+}
+
+a:focus {
+	color:inherit;
+}
+
+#divider {
+	margin-top:165px;
+	margin-bottom:25px;
+}
+
+#divider2 {
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.textcontent {
+	width:960px;
+	height:400px;
+}
+
+#titlecontent {
+	font-size:23px;
+	font-weight:600;
+	margin-bottom:10px;
+}
+
+#infocontent {
+	margin-top:10px;
+	margin-left:5px;
+}
+
+#infocontent li {
+
+	margin-left:15px;
+}
+
+#map {
+	border:1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+	position:bottom;
+	margin-top:250px;
+	width:100%;
+	height:190px;
+	background-color:#181818;
+}
+
+#wrapper {
+	width:960px;
+	height:170px;
+	margin:0px auto;
+}
+
+#logowhite {
+    margin-top:60px;
+    margin-right:80px;
+    float:left;
+
+}
+
+#ftitle {
+	color:#d9ea1e;
+	font-weight:600;
+	font-size:18px;
+	padding-top:25px;
+	margin-bottom:5px;
+}
+
+#fcolumn {
+	float:left;
+	width:170px;
+	color:white;
+}
